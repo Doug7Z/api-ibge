@@ -1,0 +1,134 @@
+
+
+#titulo{
+	width: 100%;
+/*	border: 1px solid red;*/
+	text-align: center;
+	background-color: #f0eded;
+	margin-left: 1%;
+}
+#pib{
+	width:1300px ;
+	height: 100%;
+	margin-top: 20px;
+/*	border: 1px solid red;*/
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+	margin-left: 2%;
+    
+}
+
+#ipca{
+	width:550px ;
+	height: 400px;
+	margin-top: 2px;
+	padding: 5px;
+/*	border: 1px solid red;*/
+	
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 5%;
+}
+
+#ipca15{
+	width:550px ;
+	height: 400px;
+	margin-top: -30.9%;
+	padding: 5px;
+/*	border: 1px solid red;*/
+	
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    margin-left: 55%;
+}
+
+
+#educ{
+	width:550px ;
+	height: 400px;
+	margin-top: 2px;
+	padding: 5px;
+/*	border: 1px solid red;*/
+	
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+     margin-left: 5%;
+}
+
+#saude{
+	width:550px ;
+	height: 400px;
+	margin-top: -30.9%;
+	padding: 5px;
+/*	border: 1px solid red;*/
+	
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 55%;
+}
+
+#export{
+	width:550px ;
+	height: 400px;
+	margin-top: 2px;
+	padding: 5px;
+/*	border: 1px solid red;*/
+	
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+     margin-left: 5%;
+}
+
+#import{
+	width:550px ;
+	height: 400px;
+	margin-top: -30.9%;
+	padding: 5px;
+/*	border: 1px solid red;*/
+	
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 55%;
+}
+
+#perCapita{
+	width:1300px ;
+	height: 100%;
+	margin-top: 2px;
+/*	border: 1px solid red;*/
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 2%;
+	
+}
+
+
+#idhB{
+	width:1300px ;
+	height: 100%;
+	margin-top: 2px;
+/*	border: 1px solid red;*/
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+	margin-left: 2%;
+}
+
+#bloco1{
+	background-color: #f0eded;
+	width:100% ;
+/*	z-index: 1;*/
+}
+#bloco2{
+	background-color: #f0eded;
+	width:100% ;
+}

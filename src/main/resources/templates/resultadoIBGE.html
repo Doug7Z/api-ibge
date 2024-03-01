@@ -1,0 +1,90 @@
+<html>
+	
+	<head>
+    <meta charset="UTF-8">
+    <title>Dados Brasil</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/GraficoBarrasAzul.js"></script>
+    <script src="/js/GraficoBarrasAmarelo.js"></script>
+    <script src="/js/GraficoBarrasVerde.js"></script>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/estilo.css}" /> 
+	   			
+</head>
+
+	
+	<body>
+		<h1 id="titulo">Dados Brasil</h1>
+		
+	<div id="pib">		
+		<canvas id="graficoPIB"></canvas>
+	</div>
+     
+     <div id="bloco1"> 
+		 <div id="ipca">	
+			<canvas id="graficoBarras"></canvas>
+		</div>
+		
+		 <div id="ipca15">		 
+			<canvas id="graficoIPCA15"></canvas>
+		</div>
+	</div>	
+	<div id="educ">				
+		<canvas id="educPIB"></canvas>
+	</div>
+	
+	<div id="saude">				
+		<canvas id="saudePIB"></canvas>
+	</div>
+    <div id="bloco2">
+		<div id="export">				
+			<canvas id="exportacao"></canvas>
+		</div>
+	    
+	    <div id="import">				
+			<canvas id="importacao"></canvas>
+		</div>
+	</div>	
+	 <div id="perCapita">				
+		<canvas id="pibPerCapita"></canvas>
+	</div>
+    
+    <div id="idhB">		
+		<canvas id="idhBrasil"></canvas>
+	</div>
+
+     <script th:inline="javascript">
+	       
+	        var dadosIPCA = /*[[${dadosIPCA}]]*/ []; 
+	        criarGraficoBarrasAzul(dadosIPCA, 'graficoBarras', 'IPCA');
+	        
+	        var dadosIPCA15 = /*[[${dadosIpca15}]]*/[];
+	        criarGraficoBarrasVerde(dadosIPCA15,'graficoIPCA15','IPCA15')
+	        
+	        var dadosPIB = /*[[${dadospib}]]*/ []; 
+	        criarGraficoBarrasAzul(dadosPIB, 'graficoPIB', 'PIB em US$');
+	        
+	        var dadosEducPib = /*[[${educPib}]]*/ []; 
+	        criarGraficoBarrasAmarelo(dadosEducPib, 'educPIB', ' % do PIB gasto com educação');
+	        
+	        var dadosSaude = /*[[${saudePib}]]*/ []; 
+	        criarGraficoBarrasAzul(dadosSaude, 'saudePIB', '% do PIB gasto com saúde');
+	        
+	        var dadosExport = /*[[${totalExport}]]*/[];
+	        criarGraficoBarrasVerde(dadosExport,'exportacao','Total exportado em US$')
+	        
+	        var dadosImport = /*[[${totalImport}]]*/ []; 
+	        criarGraficoBarrasAmarelo(dadosImport, 'importacao', 'Total importado em US$');
+	        
+	        var dadosPibPerCapita = /*[[${PibPerCapita}]]*/ []; 
+	        criarGraficoBarrasAzul(dadosPibPerCapita, 'pibPerCapita', 'Pib per capita em US$');
+	        
+	        var dadosIdh = /*[[${idhBrasil}]]*/[];
+	        criarGraficoBarrasVerde(dadosIdh,'idhBrasil','IDH')
+	        
+	        
+	</script>	
+
+
+	</body>
+	
+</html>

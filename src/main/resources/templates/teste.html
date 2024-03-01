@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gráfico de Barras IPCA</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/GraficoBarrasAzul.js"></script>
+    <script src="/js/GraficoBarrasAmarelo.js"></script>
+    <script src="/js/GraficoBarrasVerde.js"></script>
+	    
+	   			
+</head>
+
+
+
+
+
+	<body>
+      
+		 <h2>Educação</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="educ : ${educPib}">
+                <td th:text="${educ.ano}">Nome</td>
+                <td th:text="${educ.valor}">Valor</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Saúde</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="saude : ${saudePib}">
+                <td th:text="${saude.ano}">Nome</td>
+                <td th:text="${saude.valor}">Valor</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+	</body>
+</html>
